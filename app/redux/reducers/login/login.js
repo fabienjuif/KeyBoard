@@ -1,7 +1,7 @@
 export const initState = {}
 export const initAction = { type: 'UNKNOWN_ACTION' }
 
-import { LOGIN, LOGOUT, FAIL_LOGIN } from './actions'
+import { LOGIN, LOGOUT, FAIL_LOGIN } from '../../actions'
 
 export default (state = initState, action = initAction) => {
   switch (action.type) {
