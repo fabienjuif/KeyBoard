@@ -1,2 +1,2 @@
-export default from './Container'
+export default from './LoginContainer'
 export reducers from './reducers'

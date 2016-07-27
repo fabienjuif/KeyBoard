@@ -1,6 +1,6 @@
 import { connect } from 'react-redux'
 
-import Component from './Component'
+import Component from './Avatar'
 
 const mapStateToProps = ({ login: { user: { providerData } } }) => {
   return {

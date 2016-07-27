@@ -1,13 +1,13 @@
 import React, { PropTypes } from 'react'
 
-const Component = (props) => {
+const Avatar = (props) => {
   return (
     <img role="presentation" alt="avatar" {...props} />
   )
 }
 
-Component.propTypes = {
+Avatar.propTypes = {
   src: PropTypes.string.isRequired,
 }
 
-export default Component
+export default Avatar

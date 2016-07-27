@@ -3,7 +3,7 @@ import React, { PropTypes } from 'react'
 import Login from 'Login'
 import Avatar from 'Avatar'
 
-const Component = ({ logged }) => {
+const App = ({ logged }) => {
   return (
     <div>
       <Login />
@@ -12,8 +12,8 @@ const Component = ({ logged }) => {
   )
 }
 
-Component.propTypes = {
+App.propTypes = {
   logged: PropTypes.bool.isRequired,
 }
 
-export default Component
+export default App
