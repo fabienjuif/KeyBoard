@@ -1,6 +1,6 @@
-import reducer, { initState } from './reducers'
+import reducer, { initState } from './login'
 
-import { LOGIN, FAIL_LOGIN, LOGOUT } from './actions'
+import { LOGIN, FAIL_LOGIN, LOGOUT } from '../../actions'
 
 /* eslint-env mocha */
 
