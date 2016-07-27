@@ -44,6 +44,7 @@ module.exports = {
   resolve: {
     root: [
       path.resolve('./app/'),
+      path.resolve('./app/components'),
     ],
   },
   plugins: getPlugins([]),
