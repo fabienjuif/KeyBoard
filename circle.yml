@@ -1,11 +1,23 @@
 machine:
   node:
     version: 5.5.0
+  services:
+    - docker
+
+dependencies:
+  override:
+    - rm -R node_modules
+    - docker run --rm -v $(pwd):/usr/src/app zenika/alpine-node npm install
+
+test:
+  override:
+    - docker run --rm -v $(pwd):/usr/src/app zenika/alpine-node npm run test
+    - docker run --rm -v $(pwd):/usr/src/app zenika/alpine-node npm run lint
 
 deployment:
   production:
     branch: wireframe
     commands:
       - npm install -g firebase-tools
-      - npm run build
+      - docker run --rm -v $(pwd):/usr/src/app zenika/alpine-node npm run build
       - firebase deploy --token=${FIREBASE_TOKEN} --non-interactive --project keyboard-16ecd
