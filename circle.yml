@@ -15,7 +15,7 @@ test:
 
 deployment:
   production:
-    branch: wireframe
+    branch: master 
     commands:
       - npm install -g firebase-tools
       - docker run --rm -v $(pwd):/usr/src/app zenika/alpine-node npm run build
