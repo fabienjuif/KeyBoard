@@ -1,23 +1,24 @@
 import 'file?name=[name].[ext]!./index.html'
+import '!!file?name=[name].[ext]!normalize.css/normalize.css'
 // TODO : normalize.css
 
 import React from 'react'
 import { render } from 'react-dom'
 
-import App from './components/App'
+import Screens from './components/Screens'
 
 import store from './redux/store'
 import { Provider } from 'react-redux'
 
-import './database'
-import { login } from './redux/actions'
+// import './database'
+// import { login } from './redux/actions'
 
 // Inits
-store.dispatch(login())
+// store.dispatch(login())
 
 render(
   <Provider store={store}>
-    <App />
+    <Screens />
   </Provider>
   , document.getElementById('app')
 )
