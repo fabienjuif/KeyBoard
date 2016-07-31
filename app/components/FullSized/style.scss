@@ -1,0 +1,19 @@
+@import '~styles/colors';
+
+.fullSized {
+  align-items: center;
+  color: $color;
+  display: flex;
+  font-size: 9vw;
+  height: 75vw;
+  justify-content: center;
+  padding: 0 10vw;
+  text-align: center;
+  text-transform: uppercase;
+  width: 80vw; // 100 - (2 * 10) padding
+
+  &.second {
+    background-color: $gradiant3;
+    text-transform: none;
+  }
+}

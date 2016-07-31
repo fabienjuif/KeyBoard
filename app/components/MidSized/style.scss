@@ -1,0 +1,19 @@
+@import '~styles/colors';
+
+.midSized {
+  align-items: center;
+  color: $color;
+  display: flex;
+  font-size: 5vw;
+  justify-content: center;
+
+  .text {
+    align-items: center;
+    display: flex;
+    height: 50vw;
+    justify-content: center;
+    padding: 0 4vw;
+    text-align: center;
+    width: 42vw;
+  }
+}

@@ -1,8 +1,11 @@
 import React from 'react'
 
+import FullSized from 'FullSized'
+
+
 const BookUs = () => {
   return (
-    <div>BookUs</div>
+    <FullSized second>book us now</FullSized>
   )
 }
 

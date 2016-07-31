@@ -1,8 +1,10 @@
 import React from 'react'
 
+import FullSized from 'FullSized'
+
 const How = () => {
   return (
-    <div>How</div>
+    <FullSized>Learn about our process</FullSized>
   )
 }
 

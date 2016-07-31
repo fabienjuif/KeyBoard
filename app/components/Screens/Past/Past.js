@@ -1,8 +1,10 @@
 import React from 'react'
 
+import FullSized from 'FullSized'
+
 const Past = () => {
   return (
-    <div>Past</div>
+    <FullSized>The big project we've already done</FullSized>
   )
 }
 
