@@ -6,7 +6,6 @@ machine:
 
 dependencies:
   override:
-    - rm -R node_modules
     - docker run --rm -v $(pwd):/usr/src/app zenika/alpine-node npm install
 
 test:
