@@ -1,8 +1,9 @@
 @import '~styles/colors';
 
 .welcome {
+  @include full-gradiant(top left);
+
   align-items: center;
-  background-image: linear-gradient(to top left, $gradiant1, $gradiant2, $gradiant3, $gradiant4, $gradiant5);
   color: $white;
   display: flex;
   font-size: 10vw;

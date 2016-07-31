@@ -1,0 +1,31 @@
+@import '~styles/colors';
+
+.gif {
+  align-items: center;
+  color: $color;
+  display: flex;
+  font-size: 15vw;
+  height: 50vw;
+  justify-content: center;
+  width: 50vw;
+
+  &.gradiant5 {
+    background-color: $gradiant5;
+  }
+
+  &.gradiant4 {
+    background-color: $gradiant4;
+  }
+
+  &.gradiant3 {
+    background-color: $gradiant3;
+  }
+
+  &.gradiant2 {
+    background-color: $gradiant2;
+  }
+
+  &.gradiant1 {
+    background-color: $gradiant1;
+  }
+}

@@ -1,8 +1,10 @@
 import React from 'react'
 
+import FullSized from 'FullSized'
+
 const Freelances = () => {
   return (
-    <div>Freelances</div>
+    <FullSized second>Hello Freelances !</FullSized>
   )
 }
 

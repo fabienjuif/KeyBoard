@@ -1,0 +1,20 @@
+@import '~styles/colors';
+
+.footer {
+  align-items: center;
+  display: flex;
+  height: 12vw;
+  justify-content: center;
+
+  .text {
+    @include full-gradiant(left);
+
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 8vw;
+    text-align: center;
+    text-transform: uppercase;
+    width: 35vw;
+  }
+
+}
