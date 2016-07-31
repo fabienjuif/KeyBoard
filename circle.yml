@@ -1,3 +1,11 @@
 machine:
   node:
     version: 5.5.0
+
+deployment:
+  production:
+    branch: wireframe
+    commands:
+      - npm install -g firebase-tools
+      - npm run build
+      - firebase deploy --token=${FIREBASE_TOKEN} --non-interactive

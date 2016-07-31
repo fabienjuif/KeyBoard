@@ -1,9 +1,0 @@
-@import '~styles/colors';
-
-.login {
-  background-color: $primary;
-
-  &.logged {
-    background-color: $secondary;
-  }
-}
