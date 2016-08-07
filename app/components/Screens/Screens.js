@@ -1,7 +1,5 @@
 import React, { PropTypes } from 'react'
 
-import styles from './style.scss'
-
 import Welcome from './Welcome'
 import Why from './Why'
 import How from './How'
@@ -13,7 +11,7 @@ import Footer from './Footer'
 
 const Screens = ({ showWelcome }) => {
   return (
-    <div className={styles.screens}>
+    <div>
       {showWelcome ? <Welcome /> : null}
       <Why />
       <How />
