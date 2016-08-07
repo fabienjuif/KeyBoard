@@ -1,0 +1,35 @@
+@import '~styles/colors';
+
+.round {
+  align-items: center;
+  display: flex;
+
+  .ball {
+    border-radius: 10vw;
+    height: 10vw;
+    width: 10vw;
+  }
+
+  .line {
+    height: 2vw;
+    margin-left: -1vw;
+    margin-right: -1vw;
+    width: 12vw;
+  }
+
+  .ball,
+  .line {
+    background-color: $color-ligthen;
+  }
+
+  &.done {
+    .ball,
+    .line {
+      background-color: $color;
+    }
+
+    .ball {
+      cursor: pointer;
+    }
+  }
+}

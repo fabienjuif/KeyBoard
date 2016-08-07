@@ -1,9 +1,5 @@
 export const WELCOME_FADE_AWAY = 'WELCOME_FADE_AWAY'
-export const welcomeFadeAway = () => {
-  return {
-    type: WELCOME_FADE_AWAY,
-  }
-}
+export const welcomeFadeAway = () => ({ type: WELCOME_FADE_AWAY })
 
 export const WELCOME_START_FADE_AWAY = 'WELCOME_START_FADE_AWAY'
 export const welcomeStartFadeAway = () => {
