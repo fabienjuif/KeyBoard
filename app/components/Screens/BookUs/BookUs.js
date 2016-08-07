@@ -10,7 +10,7 @@ const BookUs = ({ steps }) => {
     <FullSized second className={styles.bookus}>
       <h1>book us now</h1>
 
-      {steps.map(step => <Step step={step} />)}
+      {steps.map(step => <Step key={step} step={step} />)}
 
       <Steps />
     </FullSized>

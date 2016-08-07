@@ -6,7 +6,7 @@ import styles from './styles.scss'
 const Steps = ({ steps }) => {
   return (
     <div className={styles.steps}>
-      {steps.map((step, index) => <Round step={step} last={index === steps.length - 1} />)}
+      {steps.map((step, index) => <Round key={step} step={step} last={index === steps.length - 1} />)}
     </div>
   )
 }
